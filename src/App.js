@@ -1,4 +1,5 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
+import './scss/Main.scss';
 
 export default function App() {
     return (
