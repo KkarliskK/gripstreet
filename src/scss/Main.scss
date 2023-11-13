@@ -1,7 +1,20 @@
 @import 'Colors.scss';
 
+*{
+    margin: 0;
+    padding: 0;
+}
+
 body{
     display: flex;
+    width: 100%;
     min-height: 100vh;
     background: linear-gradient($primary-background, $secondary-background); 
+}
+
+#root{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    min-height: 100vh;
 }

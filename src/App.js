@@ -9,6 +9,7 @@ export default function App() {
         <>
             <Header />
             {/**HERE WE NEED TO MAKE THE MAIN PAGE**/}
+            <div className='bg-white'>Hello </div>
         </>
     )
 }
