@@ -1,17 +1,17 @@
 import ReactDOM from "react-dom/client";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Login from "./Routes/Login";
-import App from "./App";
-import Register from "./Routes/Register";
+import LoginPage from "./Pages/LoginPage/index.js";
+import MainPage from "./Pages/MainPage/index.js";
+import RegisterPage from "./Pages/RegisterPage/index.js";
 
 
 export default function Index() {
   return (
     <BrowserRouter>
       <Routes>
-          <Route index element={<App />} />
-          <Route path="/login" element={<Login />} />
-          <Route path="/register" element={<Register />} />
+          <Route index element={<MainPage />} />
+          <Route path="/login" element={<LoginPage />} />
+          <Route path="/register" element={<RegisterPage />} />
       </Routes>
     </BrowserRouter>
   );
