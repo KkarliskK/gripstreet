@@ -1,0 +1,44 @@
+@import '../Colors.scss';
+
+
+h1{
+    font: caption;
+}
+.main_bar{
+    display: flex;
+    align-items: center;
+    height: 5vh;
+    background: $navbar-color;
+    padding: 8px;
+
+    .logo{
+        width: 70%;
+
+        h1{
+            color: $text-color;
+            font-size: 36px;
+        }
+    }
+    .buttons{
+        width: 30%;
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .header_item{
+        margin: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        h1{
+            font-size: 22px;
+            color: $text-color;
+            padding: 0;
+            margin: 0;
+            span{
+                margin: 0px;
+                padding: 0px;
+            }
+        }
+    }
+}

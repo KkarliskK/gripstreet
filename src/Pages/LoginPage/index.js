@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import '../scss/login.scss';
+import './index.scss';
 import { useNavigate } from 'react-router-dom';
 import axios from 'axios';
 import { form_to_obj, get_form_object } from '../functions';
