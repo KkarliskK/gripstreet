@@ -7,16 +7,17 @@ h1{
 .main_bar{
     display: flex;
     align-items: center;
-    height: 5vh;
+    height: 8vh;
     background: $navbar-color;
     padding: 8px;
 
     .logo{
         width: 70%;
 
-        h1{
-            color: $text-color;
-            font-size: 36px;
+        img{
+            height: 10vh;
+            width: 15vw;
+            object-fit: cover;
         }
     }
     .buttons{
