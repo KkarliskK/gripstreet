@@ -9,6 +9,7 @@ import Image_no_bg from '../img/gripstreet_no_bg.png';
 export default function App() {
     return (
         <>
+
         <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"></link>
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@60,1000,10,10" />
             <Header />
@@ -18,13 +19,14 @@ export default function App() {
                         <img src="https://o.remove.bg/downloads/36823833-fd19-49f8-9c67-85e2b3b139f2/383840235_122096789102064995_2141397398844886008_n-removebg-preview.png" alt="" />
                     </div>
                     <a href="#middle" className="down"><span class="down-arrow vert-move">expand_more</span></a>
-                <div className="logo w3-container w3-center w3-animate-top">
-                    <img src={Image_no_bg} alt="gripstreet_logo_no_bg" />
                 </div>
                 <div className="desc">
                     <h1>GripStreetLatvija</h1>
                 </div>
             </div>
+
+
+
         <div className="middle" id = "middle">
             <div className="join">
                 <h1>Autoklubs | Dodamies kopa izbraucienos un visādas aktivitātes, šeit var iepazīties ar cilvēkiem kam arī intresē mašīnas. Nāc un pievienojies mums!</h1>
