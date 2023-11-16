@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import axios from 'axios';
-import './header.scss';
+import '../Style/header.scss';
 
 export default function Header() {
     return(
