@@ -9,7 +9,6 @@ h1{
     align-items: center;
     height: 8vh;
     background: $navbar-color;
-    padding: 8px;
 
     .logo{
         width: 70%;
@@ -32,12 +31,16 @@ h1{
         align-items: center;
 
         h1{
+            display: flex;
+            justify-content: center;
+            align-items: center;
             font-size: 22px;
             color: $text-color;
             padding: 0;
             margin: 0;
+            cursor: pointer;
             span{
-                margin: 0px;
+                margin: 5px;
                 padding: 0px;
             }
         }
