@@ -3,6 +3,8 @@ import React, { useEffect, useState } from 'react';
 import '../Style/index.scss';
 import { useNavigate } from 'react-router-dom';
 import Header from '../Components/Header';
+import Image_no_bg from '../img/gripstreet_no_bg.png';
+
 
 export default function App() {
     return (
@@ -16,6 +18,8 @@ export default function App() {
                         <img src="https://o.remove.bg/downloads/36823833-fd19-49f8-9c67-85e2b3b139f2/383840235_122096789102064995_2141397398844886008_n-removebg-preview.png" alt="" />
                     </div>
                     <a href="#middle" className="down"><span class="down-arrow vert-move">expand_more</span></a>
+                <div className="logo w3-container w3-center w3-animate-top">
+                    <img src={Image_no_bg} alt="gripstreet_logo_no_bg" />
                 </div>
                 <div className="desc">
                     <h1>GripStreetLatvija</h1>
