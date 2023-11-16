@@ -3,24 +3,48 @@
 *{
     margin: 0;
     padding: 0;
+    scroll-behavior: smooth;
+    ::-webkit-scrollbar {
+        width: 0px;
+      }
+      
+      /* Track */
+      ::-webkit-scrollbar-track {
+        background: #f1f1f1; 
+      }
+       
+      /* Handle */
+      ::-webkit-scrollbar-thumb {
+        background: #888; 
+      }
+      
+      /* Handle on hover */
+      ::-webkit-scrollbar-thumb:hover {
+        background: #555; 
+      }
 }
 
 body{
     display: flex;
     width: 100%;
-    min-height: 100vh;
-    background: linear-gradient(0deg, #262423 0%, rgba(255, 255, 255, 0.00) 50%);
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    height: auto;
 }
 
 #root{
     display: flex;
     flex-direction: column;
     width: 100%;
-    min-height: 100vh;
+    min-height: 200vh;
 }
-
 .background{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 92vh;
+    background: linear-gradient(0deg, #262423 7%, rgba(255, 255, 255, 0) 47.29%);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+.photo{
     height: 85%;
     width: 100%;
     background-image: url("https://scontent.frix3-1.fna.fbcdn.net/v/t39.30808-6/387872066_122114438906064995_4260919319721116277_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=5f2048&_nc_ohc=JqH5iNI2rcEAX-_K-bs&_nc_ht=scontent.frix3-1.fna&oh=00_AfBLxuqMg1yNbVKSCU6_opdz5AC9W6mrpN4-mwJxM6oEpQ&oe=65599917");
@@ -31,6 +55,7 @@ body{
     display: flex;
     flex-direction: column;
     justify-content: center;
+    background-attachment: fixed;
 
     .logo{
         width: 100%;
@@ -46,11 +71,12 @@ body{
     }
     .down{
         width: 100%;
-        height: 20%;
+        height: 12%;
         // outline: 3px solid red;
         display: flex;
         justify-content: center;
         align-items: flex-end;
+        text-decoration: none;
         .down-arrow{
             font-family: 'Material Symbols Outlined';
             font-weight: normal;
@@ -103,4 +129,99 @@ body{
     font-style: normal;
     font-weight: 600;
     line-height: normal;
+}
+
+.middle{
+    width: 100%;
+    height: 50%;
+    background: linear-gradient(180deg, #262423 7%, rgba(255, 255, 255, 0) 150%);
+
+    button{
+        border-radius: 50px;
+        border: 1px solid #FAF7ED;
+        background: #CD4C0B;
+        box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.25);
+        padding: 5px 10px;
+        color: white;
+    }
+
+    .join{
+        height: 25%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        // outline: 1px solid red;
+
+        h1{
+            color: #FAF7ED;
+            text-align: center;
+            font-family: "Segoe UI",Arial,sans-serif;
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: normal;
+            width: 65%;
+        }
+    }
+    .options{
+        height: 45%;
+        display: flex;
+        justify-content: space-evenly;
+        // outline: 1px solid red;
+
+        div{
+            width: 25%;
+            height: 100%;
+            border: 1px solid black;
+            box-shadow: 0px 0px 15px 4px rgba(0, 0, 0, 0.25);
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            color: white;
+            font-size: 16px;
+        }
+        .first{
+            background-image: url("https://scontent.frix3-1.fna.fbcdn.net/v/t39.30808-6/394826443_122117228912064995_7174865197102141348_n.jpg?stp=c250.0.1000.1000a_dst-jpg_s851x315&_nc_cat=111&ccb=1-7&_nc_sid=5f2048&_nc_ohc=JHGvzrLwjl0AX9q-hLD&_nc_ht=scontent.frix3-1.fna&oh=00_AfBR3mM9WY5t9t09y-K3vR-9SY-8btOJgVSDWkFRS_IdYw&oe=655BF8DE");
+        }
+        .second{
+            background-image: url("https://scontent.frix3-1.fna.fbcdn.net/v/t39.30808-6/392927970_122114438576064995_6590705831873551876_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=5f2048&_nc_ohc=w3ct3ytJPCsAX8H5gzK&_nc_ht=scontent.frix3-1.fna&oh=00_AfCGkWT8yfMVlvN8SR4oSaR3KTOJsF2g1qrusGr392bVnA&oe=655BAAC1");
+        }
+        .third{
+            background-image: url("https://scontent.frix3-1.fna.fbcdn.net/v/t39.30808-6/392930309_122114438768064995_7968095359004616363_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=5f2048&_nc_ohc=7Wrt8daisCkAX_wDvJv&_nc_ht=scontent.frix3-1.fna&oh=00_AfDJNh3x8wFtOiuRV4vFXeeumPrRfLauIvE9ERz4GbHuBA&oe=655AE6A7");
+        }
+    }
+    .links{
+        height: 30%;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        // outline: 1px solid red;
+        div{
+            width: 30%;
+            height: 60%;
+            // border: 1px solid black;
+            display: flex;
+            align-items: center;
+            img{
+                height: 50%;
+                width: 20%;
+            }
+            h1{
+                font-size: 45px;
+                font-style: bold;
+                margin-left: 15px;
+            }
+        }
+        a{
+            display: flex;
+            flex-direction: row;
+            text-decoration: none;
+            justify-content: center;
+            align-items: center;
+        }
+    }
 }
