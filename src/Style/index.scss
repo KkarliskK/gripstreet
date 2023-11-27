@@ -47,7 +47,7 @@ body{
 .photo{
     height: 85%;
     width: 100%;
-    background-image: url("https://scontent.frix3-1.fna.fbcdn.net/v/t39.30808-6/387872066_122114438906064995_4260919319721116277_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=5f2048&_nc_ohc=JqH5iNI2rcEAX-_K-bs&_nc_ht=scontent.frix3-1.fna&oh=00_AfBLxuqMg1yNbVKSCU6_opdz5AC9W6mrpN4-mwJxM6oEpQ&oe=65599917");
+    background-image: url("../img/background.jpg");
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -173,7 +173,6 @@ body{
         div{
             width: 25%;
             height: 100%;
-            border: 1px solid black;
             box-shadow: 0px 0px 15px 4px rgba(0, 0, 0, 0.25);
             background-repeat: no-repeat;
             background-size: 100% 100%;
@@ -185,13 +184,13 @@ body{
             font-size: 16px;
         }
         .first{
-            background-image: url("https://scontent.frix3-1.fna.fbcdn.net/v/t39.30808-6/394826443_122117228912064995_7174865197102141348_n.jpg?stp=c250.0.1000.1000a_dst-jpg_s851x315&_nc_cat=111&ccb=1-7&_nc_sid=5f2048&_nc_ohc=JHGvzrLwjl0AX9q-hLD&_nc_ht=scontent.frix3-1.fna&oh=00_AfBR3mM9WY5t9t09y-K3vR-9SY-8btOJgVSDWkFRS_IdYw&oe=655BF8DE");
+            background-image: url("../img/front.jpg");
         }
         .second{
-            background-image: url("https://scontent.frix3-1.fna.fbcdn.net/v/t39.30808-6/392927970_122114438576064995_6590705831873551876_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=5f2048&_nc_ohc=w3ct3ytJPCsAX8H5gzK&_nc_ht=scontent.frix3-1.fna&oh=00_AfCGkWT8yfMVlvN8SR4oSaR3KTOJsF2g1qrusGr392bVnA&oe=655BAAC1");
+            background-image: url("../img/close.jpg");
         }
         .third{
-            background-image: url("https://scontent.frix3-1.fna.fbcdn.net/v/t39.30808-6/392930309_122114438768064995_7968095359004616363_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=5f2048&_nc_ohc=7Wrt8daisCkAX_wDvJv&_nc_ht=scontent.frix3-1.fna&oh=00_AfDJNh3x8wFtOiuRV4vFXeeumPrRfLauIvE9ERz4GbHuBA&oe=655AE6A7");
+            background-image: url("../img/back.jpg");
         }
     }
     .links{
