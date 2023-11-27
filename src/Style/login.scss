@@ -1,0 +1,110 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.cont{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    background-image: linear-gradient(rgba(0,0,0,0.45),rgba(0,0,0,0.55)), url("https://scontent.frix3-1.fna.fbcdn.net/v/t39.30808-6/387872066_122114438906064995_4260919319721116277_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=5f2048&_nc_ohc=385yVS3Di5MAX_E_bxK&_nc_ht=scontent.frix3-1.fna&oh=00_AfBiK_ZaoYQ5cAQbaemSP6oI6wuKQwnje9idefqV8HgvIg&oe=65696B17");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.left{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+
+    h1{
+        color: #FFF;
+        font-size: 70px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        margin-bottom: 20px;
+    }
+
+    img{
+        width: 420px;
+        height: 95px;
+        object-fit: cover;
+        margin-bottom: 20px;
+    }
+
+    .links{
+        width: 40%;
+        height: 10%;
+        // border: 1px solid red;
+        display: flex;
+        flex-wrap: wrap;
+
+        a{
+            height: 100%;
+            flex: 33%;
+
+            img{
+                height: 70px;
+                width: 70px;
+                object-fit: fill;
+                color: white;
+                flex-shrink: 0;
+            }
+        }
+    }
+}
+.right{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    h1{
+        color: #FFF;
+        font-size: 52px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        margin-bottom: 15px;
+    }
+    form{
+        width: 40%;
+        height: 30%;
+
+        p{
+            color: #FFF;
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+        }
+        a{
+            color: rgb(0, 166, 255);
+        }
+        input{
+            width: 100%;
+            height: 4vh;
+            border-radius: 12px;
+            border: 1px solid var(--3-gray, #D0D4D9);
+            background: var(--1-white, #FFF);
+            margin-bottom: 10px;
+        }
+        button{
+            margin-top: 10px;
+            border-radius: 3px;
+            background: #CD4C0B;
+            color: white;
+            width: 50%;
+            padding: 10px 0px;
+            border: none;
+        }
+    }
+}

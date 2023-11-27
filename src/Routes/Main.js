@@ -10,14 +10,18 @@ import Background from '../img/background.jpg';
 export default function App() {
     return (
         <>
-
+        <div className="cont1">
         <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"></link>
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@60,1000,10,10" />
             <Header />
             <div className="background">
                 <div className="photo">
                     <div className="logo w3-container w3-center w3-animate-top">
+<<<<<<< HEAD
+                        <img src= {Image_no_bg} alt="" />
+=======
                         <img src={Image_no_bg} alt="" />
+>>>>>>> 1456d8cae2cb9e157d30212aaba58a75feaffdd6
                     </div>
                     <a href="#middle" className="down"><span class="down-arrow vert-move">expand_more</span></a>
                 </div>
@@ -67,6 +71,7 @@ export default function App() {
                     </a>
                 </div>
             </div>
+        </div>
         </div>
         </>
     )
