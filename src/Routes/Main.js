@@ -9,14 +9,14 @@ import Image_no_bg from '../img/gripstreet_no_bg.png';
 export default function App() {
     return (
         <>
-
+        <div className="cont1">
         <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"></link>
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@60,1000,10,10" />
             <Header />
             <div className="background">
                 <div className="photo">
                     <div className="logo w3-container w3-center w3-animate-top">
-                        <img src="https://o.remove.bg/downloads/36823833-fd19-49f8-9c67-85e2b3b139f2/383840235_122096789102064995_2141397398844886008_n-removebg-preview.png" alt="" />
+                        <img src= {Image_no_bg} alt="" />
                     </div>
                     <a href="#middle" className="down"><span class="down-arrow vert-move">expand_more</span></a>
                 </div>
@@ -66,6 +66,7 @@ export default function App() {
                     </a>
                 </div>
             </div>
+        </div>
         </div>
         </>
     )
