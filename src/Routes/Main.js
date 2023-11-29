@@ -17,11 +17,8 @@ export default function App() {
             <div className="background">
                 <div className="photo">
                     <div className="logo w3-container w3-center w3-animate-top">
-<<<<<<< HEAD
                         <img src= {Image_no_bg} alt="" />
-=======
                         <img src={Image_no_bg} alt="" />
->>>>>>> 1456d8cae2cb9e157d30212aaba58a75feaffdd6
                     </div>
                     <a href="#middle" className="down"><span class="down-arrow vert-move">expand_more</span></a>
                 </div>
