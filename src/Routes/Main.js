@@ -2,7 +2,7 @@ import axios from 'axios';
 import React, { useEffect, useState } from 'react';
 import '../Style/index.scss';
 import { useNavigate } from 'react-router-dom';
-import Header from '../Components/Header';
+//import Header from '../Components/Header';
 import Image_no_bg from '../img/gripstreet_no_bg.png';
 import Background from '../img/background.jpg';
 
