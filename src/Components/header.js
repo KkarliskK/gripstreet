@@ -28,7 +28,7 @@ export default function Header() {
         <div className='main_bar'>
             <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
             <div className = "logo">
-                <img src={Image_no_bg} alt="" />
+                <img src={Image_no_bg} alt="background_img" />
             </div>
             <div className = "buttons">
                 <div className='header_item'>
