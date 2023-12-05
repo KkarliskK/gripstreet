@@ -2,7 +2,7 @@ import axios from 'axios';
 import React, { useEffect, useState } from 'react';
 import '../Style/index.scss';
 import { useNavigate } from 'react-router-dom';
-//import Header from '../Components/Header';
+import Header from '../Components/Header';
 import Image_no_bg from '../img/gripstreet_no_bg.png';
 import Background from '../img/background.jpg';
 
@@ -17,8 +17,7 @@ export default function App() {
             <div className="background">
                 <div className="photo">
                     <div className="logo w3-container w3-center w3-animate-top">
-                        //<img src= {Image_no_bg} alt="" />
-                        //<img src={Image_no_bg} alt="" />
+                        <img src= {Image_no_bg} alt="" />
                     </div>
                     <a href="#middle" className="down"><span class="down-arrow vert-move">expand_more</span></a>
                 </div>

@@ -4,11 +4,20 @@ import { useNavigate } from 'react-router-dom';
 import axios from 'axios';
 import { form_to_obj, get_form_object } from '../functions';
 import Image_no_bg from '../img/gripstreet_no_bg.png';
+import background from '../img/background.jpg';
 
 export default function Register() {
+
+    const navigate = useNavigate();
+
+    const navigateToLogin = () => {
+        navigate('/login');
+    };
+
     return (
             <>
                 <div className="cont">
+                    <img id='background_image' src={background} alt='backgorund'/>
                     <div className="left">
                         <h1>Pievienojies mums</h1>
                         <img src= {Image_no_bg} alt="" />
@@ -21,15 +30,19 @@ export default function Register() {
                     <div className="right">
                         <h1>Izveidot kontu</h1>
                         <form name='register_form' id='register_form'>
-                            <p>Lietotajvārds</p>
-                            <input type='text'></input>
-                            <p>Epasta Adrese</p>
-                            <input type='text'></input>
-                            <p>Parole</p>
-                            <input type='password'></input>
-                            <p>Atkārtota Parole</p>
-                            <input type='password'></input>
-                            <p>Jau ir konts? <a href="">Pieslēdzies šeit</a></p>
+                            <label>Lietotajvārds
+                                <input type='text'></input>
+                            </label>
+                            <label>Epasta Adrese
+                                <input type='text'></input>
+                            </label>
+                            <label>Parole
+                                <input type='password'></input>
+                            </label>
+                            <label>Atkārtota Parole
+                                <input type='rep_password'></input>
+                            </label>
+                            <p>Jau ir konts? <a onClick={navigateToLogin}>Pieslēdzies šeit!</a></p>
                             <button name='sign_up' id='sign_up'>Izveidot kontu</button>
                         </form>
                     </div>
