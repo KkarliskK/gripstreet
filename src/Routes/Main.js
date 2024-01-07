@@ -2,7 +2,7 @@ import axios from 'axios';
 import React, { useEffect, useState } from 'react';
 import '../Style/index.scss';
 import { useNavigate } from 'react-router-dom';
-import Header from '../Components/Header';
+import Header from '../Components/header';
 import Image_no_bg from '../img/gripstreet_no_bg.png';
 import Background from '../img/background.jpg';
 
@@ -50,19 +50,19 @@ export default function App() {
             <div className="links">
                 <div className="fb">
                     <a href="https://www.facebook.com/profile.php?id=61551949856715" target="_blank">
-                        <img src="https://qwestore.com/png_images_min/10/bFacebook-logob-bBlack-iconb-FB-icon-7384.png" alt="" />
+                        <img src="https://qwestore.com/png_images_min/10/bFacebook-logob-bBlack-iconb-FB-icon-7384.png" alt="facebook" />
                         <h1>GripStreet</h1>
                     </a>
                 </div>
                 <div className="tt">
                     <a href="https://www.tiktok.com/@gripstreetlv" target="_blank">
-                        <img src="https://www.edigitalagency.com.au/wp-content/uploads/tiktok-logo-black-png.png" alt="" />
+                        <img src="https://www.edigitalagency.com.au/wp-content/uploads/tiktok-logo-black-png.png" alt="tiktok" />
                         <h1>GripStreet</h1>
                     </a>
                 </div>
                 <div className="ig">
                     <a href="https://www.instagram.com/gripstreetlv/" target="_blank">
-                        <img src="https://creazilla-store.fra1.digitaloceanspaces.com/icons/3270077/instagram-icon-md.png" alt="" />
+                        <img src="https://creazilla-store.fra1.digitaloceanspaces.com/icons/3270077/instagram-icon-md.png" alt="instagram" />
                         <h1>GripStreet</h1>
                     </a>
                 </div>
