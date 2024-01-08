@@ -1,0 +1,19 @@
+@import 'Colors.scss';
+
+
+.footer-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: 15vh;
+    background-color: $secondary-background;
+    color: white;
+
+
+    img{
+        max-width: 40%;
+        max-height: 10vh;
+    }
+}

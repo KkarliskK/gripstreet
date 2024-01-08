@@ -40,8 +40,8 @@ export default function Login() {
             <img id='background_image' src={background} alt='backgorund'/>
             <div className="left">
                 <h1>Sveicināts Atpakaļ</h1>
-                <div className='pointer flex' onclick={navigateToMain}>
-                    <img src= {Image_no_bg} alt="" />
+                <div >
+                    <img src= {Image_no_bg} onclick={navigateToMain} alt="" />
                 </div>
                 <div className="links">
                     <a href="https://www.tiktok.com/@gripstreetlv" target="_blank"><img src="https://www.edigitalagency.com.au/wp-content/uploads/tiktok-logo-black-png.png" alt="tiktok" /></a>
@@ -52,10 +52,10 @@ export default function Login() {
             <div className="right">
                 <h1>Pieslēgties</h1>
                 <form name='login_form' id='login_form'>
-                    <p>Epasta Adrese</p>
-                    <input type='text'></input>
-                    <p>Parole</p>
-                    <input type='password'></input>
+                    <label>Lietotājvārds</label>
+                    <input type='text' id='username' name='username'></input>
+                    <label>Parole</label>
+                    <input type='password' id='password' name='password'></input>
                     <p>Nav konta? <a onClick={navigateToRegister}>Uztaisi šeit</a></p>
                     <button name='sign_in' id='sign_in' className=''>Pieslēgties</button>
                 </form>
