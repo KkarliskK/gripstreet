@@ -8,6 +8,25 @@ import Background from '../img/background.jpg';
 
 
 export default function App() {
+
+    const navigate = useNavigate();
+
+    const navigateToJoin = () => {
+        navigate('/join');
+    };
+
+    const navigateToGallery = () => {
+        navigate('/gallery');
+    };
+
+    const navigateToContacts = () => {
+        navigate('/contacts');
+    };
+
+    const navigateToCalendar = () => {
+        navigate('/calendar');
+    };
+
     return (
         <>
         <div className="cont1">
@@ -31,20 +50,20 @@ export default function App() {
         <div className="middle" id = "middle">
             <div className="join">
                 <h1>Autoklubs | Dodamies kopa izbraucienos un visādas aktivitātes, šeit var iepazīties ar cilvēkiem kam arī intresē mašīnas. Nāc un pievienojies mums!</h1>
-                <button>Pievienojies šeit!</button>
+                <button onClick={navigateToJoin} >Pievienojies šeit!</button>
             </div>
             <div className="options">
                 <div className="first">
                     <h1>Galerija</h1>
-                    <button>Apskatīt galeriju</button>
+                    <button onClick={navigateToGallery} >Apskatīt galeriju</button>
                 </div>
                 <div className="second">
                     <h1>Kalendārs</h1>
-                    <button>Apskatīt kalendārs</button>
+                    <button onClick={navigateToCalendar} >Apskatīt kalendārs</button>
                 </div>
                 <div className="third">
                     <h1>Kontakti</h1>
-                    <button>Apskatīt kontaktus</button>
+                    <button onClick={navigateToContacts} >Apskatīt kontaktus</button>
                 </div>
             </div>
             <div className="links">
