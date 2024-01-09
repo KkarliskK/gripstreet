@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import {Routes, Route, useNavigate } from 'react-router-dom';
-import axios from 'axios';
 import '../Style/header.scss';
 import Image_no_bg from '../img/gripstreet_no_bg.png';
 
