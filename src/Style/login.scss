@@ -87,7 +87,7 @@
     }
     form{
         width: 40%;
-        height: 30%;
+        height: auto;
 
         p{
             color: #FFF;
@@ -127,4 +127,9 @@
             background: #9e3f0f;
         }
     }
+}
+#error-text{
+    font-size: 15px;
+    color: rgb(250, 129, 129);
+
 }
