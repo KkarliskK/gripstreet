@@ -3,6 +3,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Login from "./Routes/Login";
 import Main from "./Routes/Main";
 import Register from "./Routes/Register";
+import Gallery from "./Routes/Gallery";
 import Store from "./Routes/Store";
 import Calendar from "./Routes/Calendar";
 
@@ -14,6 +15,7 @@ export default function Index() {
           <Route index element={<Main />} />
           <Route path="/login" element={<Login />} />
           <Route path="/register" element={<Register />} />
+          <Route path="/gallery" element={<Gallery />} />
           <Route path="/store" element={<Store />} />
           <Route path="/calendar" element={<Calendar />} />
       </Routes>
